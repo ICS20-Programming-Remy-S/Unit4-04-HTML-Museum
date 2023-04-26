@@ -1,1 +1,2 @@
 # Unit4-04-HTML-Museum
+[![GitHub's Super Linter](https://github.com/CS20-Programming-Remy-S/Unit4-04-HTML-Museum/workflows/GitHub's%20Super%20Linter/badge.svg)](https://github.com/CS20-Programming-Remy-S/Unit4-04-HTML-Museum/actions)
