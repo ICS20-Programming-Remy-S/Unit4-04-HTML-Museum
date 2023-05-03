@@ -8,31 +8,36 @@
     <meta name="author" content="Remy Skelton" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--- Favicon --->
-    <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png" />
-    <link rel="manifest" href="./fav_index/site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-deep_orange.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <!---Title for the page--->
     <title>museums  ticket entry , with JavaScript</title>
   </head>
   <body>
+    <!--- Script --->
+    <script  defer src="http://code.getmdl.io/1.3.0/matrial.min.js"></script>
+    <script src="./js/script.js"></script>
+    <!---MDL Header for the page--->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
           <span class="mdl-layout-title">Your Ticket Price at our Museums</span>
         </div>
       </header>
+      <!--- Header at the top of page with subheader--->
               <h2>Your Ticket Price at our Museums</h2>
               <h5>Please Entre your age and the day you will be visiting</h5>
-    <!--- Script --->
-    <script src="./js/script.js"></script>
     <!--- User Age and Day --->
       <form action="javascript:enterClicked()">
-        <label for="userDay">Day of the Week:</label>
-        <select name="Day options" id="user-day">
-  <option value="monday">Monday</option>
+        <label for="day">Day of the Week:</label>
+        <select name="day" id="day">
+          
+  <option value="Monday">Monday</option>
   <option value="Tuesday">Tuesday</option>
   <option value="Wednesday">Wednesday</option>
   <option value="Thursday">Thursday</option>
@@ -40,13 +45,15 @@
   <option value="Saturday">Saturday</option>
   <option value="Sunday">Sunday</option>
 </select>
-        <label for="userAge">Entre Your Age:</label>
-        <input type="number" id="user-age" placeholder="ex.10" step="1" min="0" max="120"><br><br>
+        
+        <label for="age">Entre Your Age:</label>
+        <input type="number" id="age" placeholder="ex.10" step="1" min="0" max="120"><br><br>
         <input type="submit" value="Get Results">
       </form>
     </p>
      <!-- Create a space where the user ticket price will be displayed -->
     <div id="result"></div>
+      <!---Image for webpage--->
     <center>
     <img src="./images/louvre.jpg" width="600" height="300" alt="Museums">
     </center>
